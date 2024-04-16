@@ -9,12 +9,10 @@ import './index.css'
 
 //import pages for react router
 import ErrorPage from './pages/errorPage.jsx';
-import HomePage from './pages/homePage.jsx';
 import AboutMe from './pages/aboutMePage.jsx';
 import Projects from './pages/projectsPage.jsx';
-//UNDEFINED, PLEASE DEFINE
 import Contact from './pages/contactPage.jsx';
-import Resume from './pages/resumePage.jsm'
+import Resume from './pages/resumePage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: <AboutMe />,
       },
       {
         path: 'about',
