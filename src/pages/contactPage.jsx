@@ -46,11 +46,11 @@ export default function Contact() {
     }
 
     return (
-        <main className="pb-5 mb-5">
-            <h2 className="subtitle is-2 block m-2">
+        <main className="block mx-6 pb-2 mb-6">
+            <h2 className="subtitle is-2 block">
                 Contact Me
             </h2>
-            <form className="box field m-4" onSubmit={submitHandler}>
+            <form className="box field" onSubmit={submitHandler}>
                 <p className="label">Name:</p>
                 <input className="input"
                     required

@@ -1,6 +1,6 @@
 export default function AboutMe() {
     return (
-        <main className="block ml-6 mr-6">
+        <main className="block mx-6 mb-6">
             <h2 className="subtitle is-2 block">About Me</h2>
             <img src="https://bulma.io/assets/images/placeholders/128x128.png" className="image is-128x128 block"></img>
             <p className="content">
