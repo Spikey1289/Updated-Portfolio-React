@@ -2,7 +2,7 @@ export default function AboutMe() {
     return (
         <main className="box mx-6 mb-6">
             <h2 className="subtitle is-2 block">About Me</h2>
-            <img src="../../public/assets/portrait.jpeg" className="image is-128x128 block"></img>
+            <img src="/assets/Ian-Portrait.jpeg" className="image is-128x128 block"></img>
             <div className="content">
                 <p>Hello, my name is Ian Stevenson.</p>
                 <p>

@@ -8,7 +8,7 @@ import {Outlet} from 'react-router-dom';
 import NavHeader from './components/navHeader';
 import FooterLinks from './components/pageFooter';
 
-library.add(faS, faGithub, faEnvelope, faLinkedin)
+library.add(faS, faGithub, faEnvelope, faLinkedin);
 
 function App() {
   return (
