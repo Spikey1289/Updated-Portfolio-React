@@ -1,11 +1,23 @@
 export default function AboutMe() {
     return (
-        <main className="block mx-6 mb-6">
+        <main className="box mx-6 mb-6">
             <h2 className="subtitle is-2 block">About Me</h2>
-            <img src="https://bulma.io/assets/images/placeholders/128x128.png" className="image is-128x128 block"></img>
-            <p className="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam esse, accusantium molestias repellendus aspernatur deleniti. Hic deserunt incidunt reiciendis explicabo odit dolore veritatis ad culpa, odio architecto quod obcaecati consequuntur alias itaque natus nobis nihil reprehenderit eum fugit rerum dolorum esse assumenda. Nesciunt reiciendis hic ipsam, temporibus perferendis sint vero ducimus! Veritatis ab, accusamus, ullam repellat unde ea optio officiis itaque sed atque hic ipsam, expedita officia magnam deleniti iste ad illum possimus consectetur sapiente sunt totam libero! Perspiciatis commodi expedita minus sequi dolores rem, dicta ipsa unde reiciendis tenetur aperiam praesentium doloremque delectus voluptatibus maiores? Enim quibusdam ex temporibus.
-            </p>
+            <img src="../../public/assets/portrait.jpeg" className="image is-128x128 block"></img>
+            <div className="content">
+                <p>Hello, my name is Ian Stevenson.</p>
+                <p>
+                    &emsp;I'm 25 years old, and I've been spending many of those years interested in various kinds of technology.
+                    Right out of highschool I was interested in spaceflight. Then I built my first tower computer, and I realized that I enjoyed working with 
+                    computers. I realized that I think similarly to the thing I was spending so much time playing games on. After a break of a few months,
+                    I decided to explore computer programming as a potential career path. I took limited numbers of courses in C#, Java, and eventually 
+                    landed in a Boot Camp teaching Web Development. I've spent the past few months learning HTML, JavaScript, MySQL, Express, React, and
+                    several other technologies.
+                </p>
+                <p>
+                    &emsp;In my spare time I swim, play video games, work on side-projects involving photography, and volunteer at a Hospice Organization
+                    doing office work.
+                </p>
+            </div>
         </main>
     );
 }

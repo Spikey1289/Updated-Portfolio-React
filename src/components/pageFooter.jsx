@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 function FooterLinks() {
     return (
         <nav className="navbar is-dark columns is-fixed-bottom">
@@ -7,9 +9,9 @@ function FooterLinks() {
                     My Links:
                 </h3>
             </div>
-            <a href="https://github.com/" target="_blank" className="button navbar-item column is-3 p-2 my-1 Github is-hidden-mobile">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank" className="button navbar-item column is-3 p-2 my-1 LinkedIn is-hidden-mobile">Linked In</a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ianmstevenson1@gmail.com" target="_blank" className="button navbar-item column is-3 p-2 my-1 StackOverflow is-hidden-mobile">Email</a>
+            <a href="https://github.com/Spikey1289" target="_blank" className="button navbar-item column is-3 p-2 my-1 Github is-hidden-mobile"><FontAwesomeIcon icon="fa-brands fa-github" /> - GitHub</a>
+            <a href="https://www.linkedin.com/in/ian-stevenson-2998aa27b/" target="_blank" className="button navbar-item column is-3 p-2 my-1 LinkedIn is-hidden-mobile"><FontAwesomeIcon icon="fa-brands fa-linkedin" /> - Linked In</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ianmstevenson1@gmail.com" target="_blank" className="button navbar-item column is-3 p-2 my-1 StackOverflow is-hidden-mobile"><FontAwesomeIcon icon="fa-regular fa-envelope" /> - Email</a>
 
             {/* mobile navs */}
             <div className="navbar-item has-dropdown has-dropdown-up is-hidden-desktop">
