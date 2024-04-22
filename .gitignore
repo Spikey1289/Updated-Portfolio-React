@@ -26,3 +26,5 @@ dist-ssr
 challenge_README
 challenge_README/Assets
 src/components/header-navbar
+# Local Netlify folder
+.netlify
