@@ -1,8 +1,13 @@
 # Updated-Portfolio-React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
+This is the README for the Updated Portfolio challenge of my coding bootcamp. This Repository contains the jsx, js, and assets for my updated portfolio using React. It's a single page application that shows off a list of some of my applications/repos.
 
-Currently, two official plugins are available:
+## Things Learned
+I learned a LOT about React and React Router during this challenge. I also learned how to make a downloadable file for the user to have access to.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Link to Github Repo
+[Click me!](https://github.com/Spikey1289/Updated-Portfolio-React)
+
+### Link to deployed application
+[Click me!](https://spikey1289portfolio.netlify.app/)
