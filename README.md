@@ -10,4 +10,4 @@ I learned a LOT about React and React Router during this challenge. I also learn
 [Click me!](https://github.com/Spikey1289/Updated-Portfolio-React)
 
 ### Link to deployed application
-[Click me!](https://spikey1289portfolio.netlify.app/)
+[Click me!](https://ianstevensonportfolio.netlify.app)
