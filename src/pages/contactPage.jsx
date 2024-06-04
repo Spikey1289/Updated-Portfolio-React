@@ -1,14 +1,17 @@
 import { useState } from "react";
+import courierTest from "../utils/courierForm";
 
 export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
     const [nonFunction, setNonFunction] = useState('');
 
     const nameRegex = /^[A-Za-z0-9]+$/;
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const titleRegex = /^[a-zA-Z0-9!@#\$%\^\&*\)\(\;+=._\s]{1,40}$/;
     const messageRegex = /^[a-zA-Z0-9!@#\$%\^\&*\)\(\;+=._\s]+$/;
 
 
@@ -22,6 +25,8 @@ export default function Contact() {
             setName(inputValue);
         } else if (inputType === 'email') {
             setEmail(inputValue);
+        } else if (inputType === 'title') {
+            setTitle(inputValue);
         } else if (inputType === 'message') {
             setMessage(inputValue);
         }
@@ -30,10 +35,12 @@ export default function Contact() {
     const submitHandler = async (event) => {
         event.preventDefault();
 
-        setNonFunction('Unfortunately, this form does not function independently. However, I do have a button that will open an email in another tab.\n I look forward to speaking with you.');
+        courierTest(title, message, name, email);
+        // setNonFunction('Unfortunately, this form does not function independently. However, I do have a button that will open an email in another tab.\n I look forward to speaking with you.');
 
         setName('');
         setEmail('');
+        setTitle('');
         setMessage('');
     }
 
@@ -83,6 +90,25 @@ export default function Contact() {
                             setError('Please enter an email, blank space is not counted.');
                         } else if (!emailRegex.test(String(email))) {
                             setError('Please enter a valid email address (E.g. test@gmail.com).');
+                        } else {
+                            setError('');
+                        }
+                    }}
+                />
+
+                <p className="label pt-1">Title:</p>
+                <input className="input"
+                    required
+                    value={title}
+                    name="title"
+                    type="title"
+                    placeholder="Title of your email"
+                    onChange={handleInputChange}
+                    onBlur={() => {
+                        if (title === '' || /^\s+[\s]$/.test(String(title))) {
+                            setError('Please enter a title, blank space is not counted.');
+                        } else if (!titleRegex.test(String(title))) {
+                            setError('Please keep the title simple and between 1 and 40 characters long');
                         } else {
                             setError('');
                         }

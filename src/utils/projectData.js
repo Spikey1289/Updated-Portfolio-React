@@ -2,6 +2,14 @@ let projectData;
 export default projectData = [
         {
             id: crypto.randomUUID(),
+            title: "VMST Communication Website",
+            body: "This was the final project of my coding bootcamp. Together with my group, we found an organization  that needed a website to facilitate communication with their members without reveling the members emails. This was the demo of the proposed website, which is still being developed by me and another member of the group.",
+            link: "https://github.com/ianmstevenson1/VMST-Communication-Website",
+            deployedLink: "https://vmst-communication-website-352o.onrender.com",
+            image: "/assets/projects/vmst-communication screenshot.png",
+        },
+        {
+            id: crypto.randomUUID(),
             title: "Social-Network-API",
             body: "This was a project I did for a Social Network API, which was a part of my coding bootcamp. This 'challenge' was built around a noSQL database the accompanying APIs that I built. These APIs allow users to create accounts (in a limited capacity, no password), make 'thoughts' that are connected to their account, and add reactions to thoughts, as well as 'friend' other users. This was a backend-only challenge, so there's not much in the way of visual representation other than a screenshot of the code",
             link: "https://github.com/Spikey1289/Social-Network-API",
